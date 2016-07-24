@@ -7,10 +7,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.eightstudio.danboru.cinema123.MainActivity">
+    tools:context="com.eightstudio.danboru.cinema123.MainActivity"
+    android:gravity="center"
+    >
+
 
     <TextView
+        android:id="@+id/viewData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/requestData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="REQUEST"
+        android:layout_below="@+id/viewData"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+
 </RelativeLayout>
