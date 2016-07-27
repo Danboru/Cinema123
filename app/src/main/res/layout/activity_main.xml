@@ -16,14 +16,33 @@
     <Button android:id="@+id/btnViewProducts"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="View Products"
+        android:text="View Movie"
         android:layout_marginTop="25dip"/>
 
     <!--  Button to create a new product screen -->
     <Button android:id="@+id/btnCreateProduct"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Add New Products"
+        android:text="Add New Movie"
+        android:layout_marginTop="25dip"/>
+
+
+    <Button android:id="@+id/btnCostumer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Costumer"
+        android:layout_marginTop="25dip"/>
+
+    <Button android:id="@+id/btnTicketOrdering"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Ticket Ordering"
+        android:layout_marginTop="25dip"/>
+
+    <Button android:id="@+id/btnListCostumer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="List Costumer"
         android:layout_marginTop="25dip"/>
 
 </LinearLayout>

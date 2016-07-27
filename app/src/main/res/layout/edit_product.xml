@@ -6,7 +6,7 @@
     <!-- Name Label -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Product Name"
+        android:text="Movie Name"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
@@ -23,7 +23,7 @@
     <!-- Price Label -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Price"
+        android:text="Ticket Price"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
@@ -41,7 +41,7 @@
     <!-- Description Label -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Description"
+        android:text="Description Movie"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
