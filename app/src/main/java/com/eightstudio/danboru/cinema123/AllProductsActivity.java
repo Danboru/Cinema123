@@ -1,12 +1,13 @@
 package com.eightstudio.danboru.cinema123;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+
 import org.apache.http.NameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import android.app.ListActivity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -63,7 +64,7 @@ public class AllProductsActivity extends ListActivity {
 
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) {
+									int position, long id) {
 				// getting values from selected ListItem
 				String pid = ((TextView) view.findViewById(R.id.pid)).getText()
 						.toString();
@@ -73,7 +74,7 @@ public class AllProductsActivity extends ListActivity {
 						EditProductActivity.class);
 				// sending pid to next activity
 				in.putExtra(TAG_PID, pid);
-				
+
 				// starting new activity and expecting some response back
 				startActivityForResult(in, 100);
 			}
@@ -87,7 +88,7 @@ public class AllProductsActivity extends ListActivity {
 		super.onActivityResult(requestCode, resultCode, data);
 		// if result code 100
 		if (resultCode == 100) {
-			// if result code 100 is received 
+			// if result code 100 is received
 			// means user edited/deleted product
 			// reload this screen again
 			Intent intent = getIntent();
@@ -123,7 +124,7 @@ public class AllProductsActivity extends ListActivity {
 			List<NameValuePair> params = new ArrayList<NameValuePair>();
 			// getting JSON string from URL
 			JSONObject json = jParser.makeHttpRequest(url_all_products, "GET", params);
-			
+
 			// Check your log cat for JSON reponse
 			Log.d("All Products: ", json.toString());
 
@@ -185,7 +186,7 @@ public class AllProductsActivity extends ListActivity {
 					ListAdapter adapter = new SimpleAdapter(
 							AllProductsActivity.this, productsList,
 							R.layout.list_item, new String[] { TAG_PID,
-									TAG_NAME},
+							TAG_NAME},
 							new int[] { R.id.pid, R.id.name });
 					// updating listview
 					setListAdapter(adapter);

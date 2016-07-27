@@ -1,13 +1,14 @@
 package com.eightstudio.danboru.cinema123;
-
-import android.app.Activity;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.AsyncTask;
@@ -39,7 +40,7 @@ public class EditProductActivity extends Activity {
 
 	// url to update product
 	private static final String url_update_product = "http://192.168.56.1/android_connect/update_product.php";
-	
+
 	// url to delete product
 	private static final String url_delete_product = "http://192.168.56.1/android_connect/delete_product.php";
 
@@ -62,7 +63,7 @@ public class EditProductActivity extends Activity {
 
 		// getting product details from intent
 		Intent i = getIntent();
-		
+
 		// getting product id (pid) from intent
 		pid = i.getStringExtra(TAG_PID);
 
@@ -131,14 +132,14 @@ public class EditProductActivity extends Activity {
 
 						// check your log for json response
 						Log.d("Single Product Details", json.toString());
-						
+
 						// json success tag
 						success = json.getInt(TAG_SUCCESS);
 						if (success == 1) {
 							// successfully received product details
 							JSONArray productObj = json
 									.getJSONArray(TAG_PRODUCT); // JSON Array
-							
+
 							// get first product object from JSON Array
 							JSONObject product = productObj.getJSONObject(0);
 
@@ -164,7 +165,6 @@ public class EditProductActivity extends Activity {
 
 			return null;
 		}
-
 
 		/**
 		 * After completing background task Dismiss the progress dialog
@@ -218,7 +218,7 @@ public class EditProductActivity extends Activity {
 			// check json success tag
 			try {
 				int success = json.getInt(TAG_SUCCESS);
-				
+
 				if (success == 1) {
 					// successfully updated
 					Intent i = getIntent();
@@ -234,7 +234,6 @@ public class EditProductActivity extends Activity {
 
 			return null;
 		}
-
 
 		/**
 		 * After completing background task Dismiss the progress dialog
@@ -281,7 +280,7 @@ public class EditProductActivity extends Activity {
 
 				// check your log for json response
 				Log.d("Delete Product", json.toString());
-				
+
 				// json success tag
 				success = json.getInt(TAG_SUCCESS);
 				if (success == 1) {
