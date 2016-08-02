@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.eightstudio.danboru.cinema123.Login"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:id="@+id/awal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d00e58"
+        android:orientation="vertical"
+        ></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/akhir"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#8646a6"
+        android:alpha="0"
+        ></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/logonya"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/photo"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inputdata"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_below="@+id/logonya"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="#fff"
+                android:textSize="19dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:paddingTop="10dp"
+                android:textColor="#fff"
+                android:textSize="19dp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+
+        </LinearLayout>
+
+        <!-- Ini bagian Button -->
+        <LinearLayout
+            android:id="@+id/tombolmasuk"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/inputdata"
+            >
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Login"
+                android:background="#81dadada"
+                android:textColor="#fff"
+                android:id="@+id/loginButton" />
+
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tanya"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:layout_below="@+id/tombolmasuk"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak Punya Akun ?"
+                android:textColor="#fff"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:id="@+id/daftarBaru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:textSize="15dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="#fff"
+                android:clickable="true"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

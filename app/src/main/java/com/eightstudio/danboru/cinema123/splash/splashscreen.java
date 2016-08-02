@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
+import com.eightstudio.danboru.cinema123.Login;
 import com.eightstudio.danboru.cinema123.MainActivity;
 import com.eightstudio.danboru.cinema123.R;
 
@@ -29,7 +30,7 @@ public class splashscreen extends Activity {
                try{
 
                    sleep(3000);
-                   Intent jeda = new Intent(getBaseContext(), MainActivity.class);
+                   Intent jeda = new Intent(getBaseContext(), Login.class);
                    startActivity(jeda);
                    finish();
 

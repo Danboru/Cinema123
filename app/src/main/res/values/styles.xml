@@ -6,6 +6,16 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorControlNormal">#bab6b6</item>
+        <item name="android:colorControlActivated">#bab6b6</item>
+        <item name="android:colorControlHighlight">#fff</item>
+
+    </style>
+
+    <style name="tampilanLogin">
+
+        <item name="android:colorPrimaryDark">#cc1d1d</item>
+
     </style>
 
 </resources>
