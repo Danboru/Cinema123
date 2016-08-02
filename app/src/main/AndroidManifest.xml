@@ -27,20 +27,22 @@
         <activity
             android:name=".AllProductsActivity"
             android:label="All Products"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
 
         <!-- Add Product Activity -->
         <activity
             android:name=".NewProductActivity"
             android:label="Add New Product"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
 
         <!-- Edit Product Activity -->
         <activity
             android:name=".EditProductActivity"
             android:label="Edit Product"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".Login"></activity>
+            android:screenOrientation="portrait" />
+        <activity android:name=".Login" />
+        <activity android:name=".TopMovie" />
+        <activity android:name=".EditData"></activity>
     </application>
 
 </manifest>

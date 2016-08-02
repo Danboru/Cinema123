@@ -40,6 +40,7 @@ public class AllProductsActivity extends ListActivity {
 	private static final String TAG_PRODUCTS = "products";
 	private static final String TAG_PID = "pid";
 	private static final String TAG_NAME = "name";
+	private static final String TAG_PRICE = "price";
 
 	// products JSONArray
 	JSONArray products = null;
@@ -71,7 +72,7 @@ public class AllProductsActivity extends ListActivity {
 
 				// Starting new intent
 				Intent in = new Intent(getApplicationContext(),
-						EditProductActivity.class);
+						EditData.class);
 				// sending pid to next activity
 				in.putExtra(TAG_PID, pid);
 
@@ -144,6 +145,7 @@ public class AllProductsActivity extends ListActivity {
 						// Storing each json item in variable
 						String id = c.getString(TAG_PID);
 						String name = c.getString(TAG_NAME);
+						String price = c.getString(TAG_PRICE);
 
 						// creating new HashMap
 						HashMap<String, String> map = new HashMap<String, String>();
@@ -151,6 +153,7 @@ public class AllProductsActivity extends ListActivity {
 						// adding each child node to HashMap key => value
 						map.put(TAG_PID, id);
 						map.put(TAG_NAME, name);
+						map.put(TAG_PRICE, price);
 
 						// adding HashList to ArrayList
 						productsList.add(map);

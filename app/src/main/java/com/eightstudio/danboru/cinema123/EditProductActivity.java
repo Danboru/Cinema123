@@ -15,6 +15,8 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -55,13 +57,15 @@ public class EditProductActivity extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+
 		setContentView(R.layout.edit_product);
 
-		// save button
+		/*
+		// tombol simpan
 		btnSave = (Button) findViewById(R.id.btnSave);
 		btnDelete = (Button) findViewById(R.id.btnDelete);
 
-		// getting product details from intent
+		// menerima data dari intent yang sebelumnya
 		Intent i = getIntent();
 
 		// getting product id (pid) from intent
@@ -88,7 +92,7 @@ public class EditProductActivity extends Activity {
 				// deleting product in background thread
 				new DeleteProduct().execute();
 			}
-		});
+		}); */
 
 	}
 
@@ -98,13 +102,13 @@ public class EditProductActivity extends Activity {
 	class GetProductDetails extends AsyncTask<String, String, String> {
 
 		/**
-		 * Before starting background thread Show Progress Dialog
+		 * Sebelum memulai, akan tampil loading data terlebih dahulu
 		 * */
 		@Override
 		protected void onPreExecute() {
 			super.onPreExecute();
 			pDialog = new ProgressDialog(EditProductActivity.this);
-			pDialog.setMessage("Loading product details. Please wait...");
+			pDialog.setMessage("Loading movie details. Please wait...");
 			pDialog.setIndeterminate(false);
 			pDialog.setCancelable(true);
 			pDialog.show();
@@ -263,7 +267,7 @@ public class EditProductActivity extends Activity {
 		}
 
 		/**
-		 * Deleting product
+		 * Penghapusan data
 		 * */
 		protected String doInBackground(String... args) {
 
