@@ -1,3 +1,67 @@
 <resources>
-    <string name="app_name">Cinema123</string>
+    <string name="app_name">City Cinema</string>
+
+    <string-array name="nama_file">
+
+        <item>Alien</item>
+        <item>Batman</item>
+        <item>Castle</item>
+        <item>Deadpool</item>
+        <item>Guardian</item>
+        <item>Ghandi</item>
+        <item>Grave</item>
+        <item>Hachi</item>
+        <item>Annable</item>
+        <item>Bad Mom</item>
+        <item>Beyond</item>
+        <item>Conjuring</item>
+        <item>FInding Dory</item>
+        <item>Ghost</item>
+        <item>Ice Age</item>
+        <item>Jason</item>
+        <item>Koala</item>
+        <item>Light Out</item>
+        <item>Nerve</item>
+        <item>Pets</item>
+        <item>Suicide</item>
+        <item>Tarzan</item>
+        <item>Ant Man</item>
+        <item>Avengers</item>
+        <item>Spongebob</item>
+
+    </string-array>
+
+
+    <string-array name="rating_filem">
+
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+        <item>Rating : 1.4/1.4</item>
+
+
+    </string-array>
+
+
 </resources>

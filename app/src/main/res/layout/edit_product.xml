@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/pastikanData"
         android:text="CEK DATA"
+        android:background="#81dadada"
         />
 
     <!-- Name Label -->
@@ -90,6 +91,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Save Changes"
+            android:background="#81dadada"
             android:layout_weight="1"/>
 
         <!-- Button Create Product -->
@@ -97,6 +99,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Delete"
+            android:background="#81dadada"
             android:layout_weight="1"/>
     </LinearLayout>
 

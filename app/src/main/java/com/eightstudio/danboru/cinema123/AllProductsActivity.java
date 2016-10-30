@@ -59,8 +59,7 @@ public class AllProductsActivity extends ListActivity {
 		// Get listview
 		ListView lv = getListView();
 
-		// on seleting single product
-		// launching Edit Product Screen
+		//bagian yang handle data setiap movie
 		lv.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
